@@ -1,7 +1,9 @@
 const router = require('express').Router();
 
-const userRoutes = require('./user-routes');
+// collect endpoints
+const userRoutes = require('./user-routes.js');
 
+// prefixed names
 router.use('/users', userRoutes);
 
 module.exports = router;
